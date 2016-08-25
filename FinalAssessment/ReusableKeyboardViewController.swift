@@ -6,7 +6,7 @@
 //  Copyright © 2016 Skkz. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 import Firebase
 
 class ReusableKeyboardViewController: UIViewController, UITextFieldDelegate {

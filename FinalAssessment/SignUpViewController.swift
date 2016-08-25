@@ -6,7 +6,7 @@
 //  Copyright © 2016 Skkz. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 import Firebase
 
 class SignUpViewController: ReusableKeyboardViewController {
@@ -15,7 +15,6 @@ class SignUpViewController: ReusableKeyboardViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var userNameTextField: UITextField!
     
-    private var firebaseRef = FIRDatabase.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +28,7 @@ class SignUpViewController: ReusableKeyboardViewController {
         FIRAuth.auth()?.createUserWithEmail(email, password: password, completion: { (user, error) in
             if let user = user {
                 let userDict = ["email": email, "username": username]
-                self.firebaseRef.child("users").child(user.uid).setValue(userDict)
+                FIRDatabase.database().reference().child("users").child(user.uid).setValue(userDict)
                 NSUserDefaults.standardUserDefaults().setValue(user.uid, forKey: "uid")
                 User.signIn(user.uid)
                 self.performSegueWithIdentifier("LoginSegue", sender: sender)

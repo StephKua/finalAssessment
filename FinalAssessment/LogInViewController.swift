@@ -6,7 +6,7 @@
 //  Copyright © 2016 Skkz. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 import Firebase
 
 class LogInViewController: ReusableKeyboardViewController {
@@ -14,9 +14,6 @@ class LogInViewController: ReusableKeyboardViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    private var firebaseRef = FIRDatabase.database().reference()
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
