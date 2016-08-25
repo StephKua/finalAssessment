@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1500159D6B4E43F9482007D6 /* Pods_FinalAssessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F56F1F935D4D9BE80C74460 /* Pods_FinalAssessment.framework */; };
+		8C2C615E1D6EDC5A00C647F2 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C615D1D6EDC5A00C647F2 /* CommentViewController.swift */; };
+		8C2C61601D6EFC7A00C647F2 /* EditStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C615F1D6EFC7A00C647F2 /* EditStatusViewController.swift */; };
 		8C9237411D6E89BE00FA79C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9237401D6E89BE00FA79C7 /* AppDelegate.swift */; };
 		8C9237461D6E89BE00FA79C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9237441D6E89BE00FA79C7 /* Main.storyboard */; };
 		8C9237481D6E89BE00FA79C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C9237471D6E89BE00FA79C7 /* Assets.xcassets */; };
@@ -23,13 +25,14 @@
 		8C9237631D6E8FAC00FA79C7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9237621D6E8FAC00FA79C7 /* User.swift */; };
 		8C9237651D6E925B00FA79C7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8C9237641D6E925B00FA79C7 /* .gitignore */; };
 		8C9237671D6E951400FA79C7 /* ReusableKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9237661D6E951400FA79C7 /* ReusableKeyboardViewController.swift */; };
-		8C9237691D6E9A3A00FA79C7 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9237681D6E9A3A00FA79C7 /* Friend.swift */; };
 		8C92376B1D6EA7E400FA79C7 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92376A1D6EA7E400FA79C7 /* Status.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3030DC60542F5B517523922E /* Pods-FinalAssessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalAssessment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalAssessment/Pods-FinalAssessment.debug.xcconfig"; sourceTree = "<group>"; };
 		6F56F1F935D4D9BE80C74460 /* Pods_FinalAssessment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalAssessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2C615D1D6EDC5A00C647F2 /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		8C2C615F1D6EFC7A00C647F2 /* EditStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditStatusViewController.swift; sourceTree = "<group>"; };
 		8C92373D1D6E89BE00FA79C7 /* FinalAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9237401D6E89BE00FA79C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C9237451D6E89BE00FA79C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,7 +50,6 @@
 		8C9237621D6E8FAC00FA79C7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8C9237641D6E925B00FA79C7 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8C9237661D6E951400FA79C7 /* ReusableKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableKeyboardViewController.swift; sourceTree = "<group>"; };
-		8C9237681D6E9A3A00FA79C7 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		8C92376A1D6EA7E400FA79C7 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		BC6695AC1BE6C45DA1F50E40 /* Pods-FinalAssessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalAssessment.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalAssessment/Pods-FinalAssessment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,9 +110,10 @@
 				8C92375E1D6E8F6200FA79C7 /* AddFriendViewController.swift */,
 				8C9237601D6E8F7400FA79C7 /* FriendsViewController.swift */,
 				8C9237621D6E8FAC00FA79C7 /* User.swift */,
-				8C9237681D6E9A3A00FA79C7 /* Friend.swift */,
 				8C9237661D6E951400FA79C7 /* ReusableKeyboardViewController.swift */,
 				8C92376A1D6EA7E400FA79C7 /* Status.swift */,
+				8C2C615D1D6EDC5A00C647F2 /* CommentViewController.swift */,
+				8C2C615F1D6EFC7A00C647F2 /* EditStatusViewController.swift */,
 			);
 			path = FinalAssessment;
 			sourceTree = "<group>";
@@ -251,12 +254,13 @@
 				8C92375F1D6E8F6200FA79C7 /* AddFriendViewController.swift in Sources */,
 				8C9237611D6E8F7400FA79C7 /* FriendsViewController.swift in Sources */,
 				8C9237571D6E8F1600FA79C7 /* LogInViewController.swift in Sources */,
-				8C9237691D6E9A3A00FA79C7 /* Friend.swift in Sources */,
 				8C9237671D6E951400FA79C7 /* ReusableKeyboardViewController.swift in Sources */,
+				8C2C61601D6EFC7A00C647F2 /* EditStatusViewController.swift in Sources */,
 				8C92375B1D6E8F3B00FA79C7 /* UserProfileViewController.swift in Sources */,
 				8C92375D1D6E8F4B00FA79C7 /* FriendProfileViewController.swift in Sources */,
 				8C9237551D6E8F0600FA79C7 /* SignUpViewController.swift in Sources */,
 				8C9237591D6E8F2600FA79C7 /* FeedViewController.swift in Sources */,
+				8C2C615E1D6EDC5A00C647F2 /* CommentViewController.swift in Sources */,
 				8C9237631D6E8FAC00FA79C7 /* User.swift in Sources */,
 				8C9237411D6E89BE00FA79C7 /* AppDelegate.swift in Sources */,
 				8C92376B1D6EA7E400FA79C7 /* Status.swift in Sources */,
