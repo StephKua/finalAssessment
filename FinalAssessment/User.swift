@@ -7,8 +7,38 @@
 //
 
 import Foundation
+import Firebase
 
 class User: NSObject {
+    
+    var friends: [String: Bool]
+    var userName: String
+    var status: [String: Bool]
+    
+    init?(snapshot: FIRDataSnapshot) {
+        guard let dict = snapshot.value as? [String: AnyObject] else {
+            return nil
+        }
+        
+        if let name = dict["username"] as? String {
+            self.userName = name
+        } else {
+            self.userName = ""
+        }
+        
+        if let friends = dict["friends"] as? [String: Bool] {
+            self.friends = friends
+        } else {
+            self.friends = [:]
+        }
+        
+        if let status = dict["status"] as? [String:Bool] {
+            self.status = status
+        } else {
+            self.status = [:]
+        }
+    }
+    
     
     class func signIn(uid:String){
         NSUserDefaults.standardUserDefaults().setValue(uid, forKeyPath: "uid")
